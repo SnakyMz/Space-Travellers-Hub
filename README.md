@@ -132,9 +132,9 @@ You can deploy this project using GitPages:
 
 👤 **Asiimwe Mark**
 
-<br> GitHub: @[As1imwe-Mark](https://github.com/As1imwe-Mark)
-<br> Twitter:@[markasiimwe](https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09)
-<br> LinkedIn:@[Mark Asiimwe](https://www.linkedin.com/in/mark-asiimwe-0ab0611ab)
+- GitHub: [@As1imwe-Mark](https://github.com/As1imwe-Mark)
+- Twitter: [@markasiimwe](https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09)
+- LinkedIn: [Mark Asiimwe](https://www.linkedin.com/in/mark-asiimwe-0ab0611ab)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
