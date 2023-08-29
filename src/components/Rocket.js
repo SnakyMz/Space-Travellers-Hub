@@ -12,7 +12,10 @@ function Rocket({
       <img src={image} alt="Rocket" className="rocketImg" />
       <div className="rocketDetail">
         <h3 className="rocketHead">{name}</h3>
-        <p className="rocketDesc">{description}</p>
+        <p className="rocketDesc">
+          {reserved === true ? <span className="reserveBadge">Reserved</span> : ''}
+          {description}
+        </p>
         {reserved === false ? <button type="button" className="reserveRocket" onClick={() => dispatch(reserveRocket(id))}>Reserve Rocket</button> : <button type="button" className="cancelRocket" onClick={() => dispatch(cancelRocket(id))}>Cancel Reservation</button>}
       </div>
     </div>

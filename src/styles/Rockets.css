@@ -22,6 +22,17 @@
 .rocketDesc {
   font-size: 1.1rem;
   padding-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.reserveBadge {
+  background-color: lightseagreen;
+  color: white;
+  margin-right: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .reserveRocket {
