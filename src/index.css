@@ -15,7 +15,7 @@ table {
 
 th {
   border: 1px solid hsl(240, 31%, 89%);
-  padding: 5PX 0;
+  padding: 5px 0;
   background-color: white;
   text-align: start;
 }
@@ -23,7 +23,7 @@ th {
 caption {
   text-align: start;
   margin-bottom: 6px;
-} 
+}
 
 td {
   min-width: 120px;
@@ -72,9 +72,5 @@ button {
 }
 
 .cancel:hover {
-  background-color: hsl(0, 70%, 91%)
+  background-color: hsl(0, 70%, 91%);
 }
-
-
-
-
