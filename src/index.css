@@ -1,5 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 30px auto;
+}
+
+th {
+  border: 1px solid hsl(240, 31%, 89%);
+  padding: 5px 0;
+  background-color: white;
+  text-align: start;
+}
+
+caption {
+  text-align: start;
+  margin-bottom: 6px;
+}
+
+td {
+  min-width: 120px;
+  padding: 20px 6px;
+  border: 1px solid hsl(240, 31%, 89%);
+}
+
+tr:nth-child(odd) {
+  background-color: hsl(240, 27%, 96%);
+}
+
+small {
+  font-size: 12px;
+  text-align: center;
+  padding: 3px;
+  color: white;
+  border-radius: 2px;
+}
+
+.not-member {
+  background-color: hsl(240, 1%, 22%);
+}
+
+.member {
+  background-color: rgb(10, 111, 158);
+}
+
+button {
+  background-color: transparent;
+  padding: 5px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join {
+  border: 0.5px solid hsl(240, 2%, 46%);
+}
+
+.cancel {
+  border: 0.5px solid hsl(0, 94%, 58%);
+  color: hsl(0, 94%, 58%);
+}
+
+.join:hover {
+  background-color: hsl(240, 11%, 80%);
+}
+
+.cancel:hover {
+  background-color: hsl(0, 70%, 91%);
 }

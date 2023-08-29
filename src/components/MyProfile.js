@@ -1,6 +1,10 @@
+import MyMission from './MyMission';
+
 function MyProfile() {
   return (
-    <section id="profile" />
+    <section id="profile">
+      <MyMission />
+    </section>
   );
 }
 
