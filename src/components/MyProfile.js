@@ -5,8 +5,8 @@ import '../styles/MyProfile.css';
 function MyProfile() {
   return (
     <section id="profile">
-      <MyRockets />
       <MyMission />
+      <MyRockets />
     </section>
   );
 }
