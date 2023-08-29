@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import MissionCard from './MissionCard';
 import { getMission } from '../redux/missions/missionSlice';
-import MyMission from './MyMission';
 
 const Missions = () => {
   const { isLoading, isError, missions } = useSelector((store) => store.missions);
@@ -37,7 +36,6 @@ const Missions = () => {
         </thead>
         <MissionCard missions={missions} />
       </table>
-      <MyMission />
     </section>
   );
 };

@@ -1,16 +1,34 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Rocket from './Rocket';
+import { getRockets } from '../redux/rockets/rocketSlice';
 
 function Rockets() {
-  const rockets = useSelector((store) => store.rockets);
+  const { isLoading, hasError, rockets } = useSelector((store) => store.rockets);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getRockets());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (hasError) {
+    return <div>Something went wrong!</div>;
+  }
   return (
     <section id="rockets">
       {rockets.map((rocket) => (
-        <div className="rocket" key={rocket.id}>
-          <img src={rocket.flickr_images} alt="Rocket" className="rocketImg" />
-          <h3 className="rocketHead">{rocket.rocket_name}</h3>
-          <p className="rocketDesc">{rocket.description}</p>
-          <button type="button" className="Btn reserveBtn">Reserve Rocket</button>
-        </div>
+        <Rocket
+          key={rocket.id}
+          id={rocket.id}
+          image={rocket.flickr_images[0]}
+          name={rocket.name}
+          description={rocket.description}
+        />
       ))}
     </section>
   );
