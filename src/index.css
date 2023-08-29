@@ -17,13 +17,16 @@ header {
   padding-bottom: 8px;
 }
 
-.logo, nav {
+.logo,
+nav {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.profile-link, .mission-link, .rocket-link {
+.profile-link,
+.mission-link,
+.rocket-link {
   color: rgb(10, 111, 158);
   text-decoration: none;
 }

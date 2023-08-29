@@ -8,10 +8,10 @@ const Header = () => (
       <h2>{'Space Traveler\'s Hub'}</h2>
     </div>
     <nav>
-      <NavLink className="rocket-link" to="/" activeClassName="active-link">Rockets</NavLink>
-      <NavLink className="mission-link visit" to="/missions" activeClassName="active-link">Missions</NavLink>
+      <NavLink className="rocket-link" to="/">Rockets</NavLink>
+      <NavLink className="mission-link visit" to="/missions">Missions</NavLink>
       <div className="divider" />
-      <NavLink className="profile-link" to="/profile" activeClassName="active-link">My Profile</NavLink>
+      <NavLink className="profile-link" to="/profile">My Profile</NavLink>
     </nav>
   </header>
 );

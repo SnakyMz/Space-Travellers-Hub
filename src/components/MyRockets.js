@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 function MyRockets() {
   const rockets = useSelector((store) => store.rockets.rockets);
-  const reservedRockets = rockets.filter((rocket) => rocket.reserved !== true);
+  const reservedRockets = rockets.filter((rocket) => rocket.reserved === true);
   return (
     <section id="myRockets">
       <table>
