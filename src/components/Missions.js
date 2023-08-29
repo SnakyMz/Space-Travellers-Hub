@@ -1,8 +1,26 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import MissionCard from './MissionCard';
+import { getMission } from '../redux/missions/missionSlice';
+import MyMission from './MyMission';
 
 const Missions = () => {
-  const missions = useSelector((store) => store.mission.missions);
+  const { isLoading, isError, missions } = useSelector((store) => store.missions);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMission());
+  }, [dispatch]);
+  if (isLoading) {
+    return (
+      <div>Loading...</div>
+    );
+  }
+
+  if (isError) {
+    return (
+      <div><h1>No missions Found!</h1></div>
+    );
+  }
 
   return (
     <section className="missions-list">
@@ -19,6 +37,7 @@ const Missions = () => {
         </thead>
         <MissionCard missions={missions} />
       </table>
+      <MyMission />
     </section>
   );
 };

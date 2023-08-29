@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 const MyMission = () => {
-  const missions = useSelector((store) => store.mission.missions);
+  const missions = useSelector((store) => store.missions.missions);
   return (
     <section>
       <table>
