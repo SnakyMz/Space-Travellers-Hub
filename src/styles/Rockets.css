@@ -37,6 +37,18 @@
   color: dodgerblue;
 }
 
+.cancelRocket {
+  color: slategray;
+  border: solid 0.1rem slategray;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+}
+
+.cancelRocket:hover {
+  background-color: slategray;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   #rockets {
     padding: 2%;
