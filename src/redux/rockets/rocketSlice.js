@@ -4,7 +4,14 @@ import axios from 'axios';
 export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   try {
     const responce = await axios.get('https://api.spacexdata.com/v4/rockets');
-    return responce.data;
+    const data = responce.data.map((rocket) => ({
+      id: rocket.id,
+      image: rocket.flickr_images[0],
+      name: rocket.name,
+      description: rocket.description,
+      reservation: false,
+    }));
+    return data;
   } catch (error) {
     return error;
   }

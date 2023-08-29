@@ -1,15 +1,13 @@
 import '../styles/Rockets.css';
 import { PropTypes } from 'prop-types';
 
-function Rocket({
-  id, image, name, description,
-}) {
+function Rocket({ rocket }) {
   return (
-    <div className="rocket" id={id}>
-      <img src={image} alt="Rocket" className="rocketImg" />
+    <div className="rocket" id={rocket.id}>
+      <img src={rocket.image} alt="Rocket" className="rocketImg" />
       <div className="rocketDetail">
-        <h3 className="rocketHead">{name}</h3>
-        <p className="rocketDesc">{description}</p>
+        <h3 className="rocketHead">{rocket.name}</h3>
+        <p className="rocketDesc">{rocket.description}</p>
         <button type="button" className="reserveRocket">Reserve Rocket</button>
       </div>
     </div>
@@ -17,10 +15,7 @@ function Rocket({
 }
 
 Rocket.propTypes = {
-  id: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  rocket: PropTypes.string.isRequired,
 };
 
 export default Rocket;

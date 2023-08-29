@@ -24,10 +24,7 @@ function Rockets() {
       {rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
-          id={rocket.id}
-          image={rocket.flickr_images[0]}
-          name={rocket.name}
-          description={rocket.description}
+          rocket={rocket}
         />
       ))}
     </section>
