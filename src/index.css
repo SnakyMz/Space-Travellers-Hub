@@ -7,9 +7,40 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 8px auto;
+  border-bottom: 1px solid  hsl(240, 31%, 89%);
+  padding-bottom: 8px;
+}
+
+.logo, nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-link, .mission-link, .rocket-link {
+  color: rgb(10, 111, 158);
+  text-decoration: none;
+}
+
+.divider {
+  border: 1px solid rgb(10, 111, 158);
+  height: 15px;
+  width: 1px;
+}
+
+.logo img {
+  width: 50px;
+}
+
 table {
   border-collapse: collapse;
-  width: 80%;
+  width: 90%;
   margin: 30px auto;
 }
 
@@ -73,4 +104,18 @@ button {
 
 .cancel:hover {
   background-color: hsl(0, 70%, 91%);
+}
+
+.active-link {
+  text-decoration: underline;
+  background-color: red;
+}
+
+#profile {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.my-missions {
+  width: 50%;
 }
