@@ -1,8 +1,7 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { getMission } from './redux/missions/missionSlice';
-import MyMission from './components/MyMission';
-import Missions from './components/Missions';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Rockets from './components/Rockets';
+import MyProfile from './components/MyProfile';
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +25,11 @@ function App() {
     <div className="App">
       <Missions />
       <MyMission />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/myprofile" element={<MyProfile />} />
+      </Routes>
     </div>
   );
 }
