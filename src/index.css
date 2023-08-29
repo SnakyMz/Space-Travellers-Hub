@@ -11,25 +11,29 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 90%;
   margin: 8px auto;
-  border-bottom: 1px solid  hsl(240, 31%, 89%);
+  border-bottom: 1px solid hsl(240, 31%, 89%);
   padding-bottom: 8px;
 }
 
-.logo, nav {
+.logo,
+nav {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.profile-link, .mission-link, .rocket-link {
+.profile-link,
+.mission-link,
+.rocket-link {
   color: rgb(10, 111, 158);
   text-decoration: none;
 }
 
 .divider {
-  border: 1px solid rgb(10, 111, 158);
+  border: 1px solid black;
   height: 15px;
   width: 1px;
 }
@@ -118,4 +122,18 @@ button {
 
 .my-missions {
   width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .rocket-link {
+    padding-right: 2rem;
+  }
+
+  .mission-link {
+    padding-right: 1rem;
+  }
+
+  .profile-link {
+    padding-left: 1rem;
+  }
 }

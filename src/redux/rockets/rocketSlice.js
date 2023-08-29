@@ -4,7 +4,14 @@ import axios from 'axios';
 export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   try {
     const responce = await axios.get('https://api.spacexdata.com/v4/rockets');
-    return responce.data;
+    const data = responce.data.map((rocket) => ({
+      id: rocket.id,
+      image: rocket.flickr_images[0],
+      name: rocket.name,
+      description: rocket.description,
+      reserved: false,
+    }));
+    return data;
   } catch (error) {
     return error;
   }
@@ -17,7 +24,24 @@ export const rocketSlice = createSlice({
     isLoading: false,
     hasError: false,
   },
-  reducers: {},
+  reducers: {
+    reserveRocket: (state, action) => {
+      state.rockets = state.rockets.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: true };
+      });
+    },
+    cancelRocket: (state, action) => {
+      state.rockets = state.rockets.map((rocket) => {
+        if (rocket.id !== action.payload) {
+          return rocket;
+        }
+        return { ...rocket, reserved: false };
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getRockets.pending, (state) => {
@@ -35,5 +59,7 @@ export const rocketSlice = createSlice({
       });
   },
 });
+
+export const { reserveRocket, cancelRocket } = rocketSlice.actions;
 
 export default rocketSlice.reducer;

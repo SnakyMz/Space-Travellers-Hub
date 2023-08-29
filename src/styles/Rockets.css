@@ -22,6 +22,17 @@
 .rocketDesc {
   font-size: 1.1rem;
   padding-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.reserveBadge {
+  background-color: lightseagreen;
+  color: white;
+  margin-right: 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .reserveRocket {
@@ -35,6 +46,18 @@
 .reserveRocket:hover {
   background-color: white;
   color: dodgerblue;
+}
+
+.cancelRocket {
+  color: slategray;
+  border: solid 0.1rem slategray;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+}
+
+.cancelRocket:hover {
+  background-color: slategray;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
