@@ -25,6 +25,10 @@ nav {
   gap: 10px;
 }
 
+nav a.active {
+  text-decoration: underline;
+}
+
 .profile-link,
 .mission-link,
 .rocket-link {
@@ -73,17 +77,18 @@ tr:nth-child(odd) {
 small {
   font-size: 12px;
   text-align: center;
-  padding: 3px;
+  padding: 1.5px 3px;
   color: white;
-  border-radius: 2px;
+  border-radius: 3px;
+  font-weight: 600;
 }
 
 .not-member {
-  background-color: hsl(240, 1%, 22%);
+  background-color: hsla(240, 1%, 22%, 0.678);
 }
 
 .member {
-  background-color: rgb(10, 111, 158);
+  background-color: lightseagreen;
 }
 
 button {
