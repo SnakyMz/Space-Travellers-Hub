@@ -1,5 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 8px auto;
+  border-bottom: 1px solid hsl(240, 31%, 89%);
+  padding-bottom: 8px;
+}
+
+.logo,
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.profile-link,
+.mission-link,
+.rocket-link {
+  color: rgb(10, 111, 158);
+  text-decoration: none;
+}
+
+.divider {
+  border: 1px solid black;
+  height: 15px;
+  width: 1px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 30px auto;
+}
+
+th {
+  border: 1px solid hsl(240, 31%, 89%);
+  padding: 5px 0;
+  background-color: white;
+  text-align: start;
+}
+
+caption {
+  text-align: start;
+  margin-bottom: 6px;
+}
+
+td {
+  min-width: 120px;
+  padding: 20px 6px;
+  border: 1px solid hsl(240, 31%, 89%);
+}
+
+tr:nth-child(odd) {
+  background-color: hsl(240, 27%, 96%);
+}
+
+small {
+  font-size: 12px;
+  text-align: center;
+  padding: 1.5px 3px;
+  color: white;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.not-member {
+  background-color: hsla(240, 1%, 22%, 0.678);
+}
+
+.member {
+  background-color: lightseagreen;
+}
+
+button {
+  background-color: transparent;
+  padding: 5px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.join {
+  border: 0.5px solid hsl(240, 2%, 46%);
+}
+
+.cancel {
+  border: 0.5px solid hsl(0, 94%, 58%);
+  color: hsl(0, 94%, 58%);
+}
+
+.join:hover {
+  background-color: hsl(240, 11%, 80%);
+}
+
+.cancel:hover {
+  background-color: hsl(0, 70%, 91%);
+}
+
+.active-link {
+  text-decoration: underline;
+  background-color: red;
+}
+
+#profile {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.my-missions {
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .rocket-link {
+    padding-right: 2rem;
+  }
+
+  .mission-link {
+    padding-right: 1rem;
+  }
+
+  .profile-link {
+    padding-left: 1rem;
+  }
 }
