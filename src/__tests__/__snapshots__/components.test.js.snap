@@ -1,0 +1,711 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Rendering Should render Header section 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <div
+          class="logo"
+        >
+          <img
+            alt="hub-logo"
+            src="planet.png"
+          />
+          <h2>
+            Space Traveler's Hub
+          </h2>
+        </div>
+        <nav>
+          <a
+            class="rocket-link"
+            href="../Rockets.js"
+          >
+            Rockets
+          </a>
+          <a
+            class="mission-link visit"
+            href="../Missions.js"
+          >
+            Missions
+          </a>
+          <div
+            class="divider"
+          />
+          <a
+            class="profile-link"
+            href="../MyProfile.js"
+          >
+            My Profile
+          </a>
+        </nav>
+      </header>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <div
+        class="logo"
+      >
+        <img
+          alt="hub-logo"
+          src="planet.png"
+        />
+        <h2>
+          Space Traveler's Hub
+        </h2>
+      </div>
+      <nav>
+        <a
+          class="rocket-link"
+          href="../Rockets.js"
+        >
+          Rockets
+        </a>
+        <a
+          class="mission-link visit"
+          href="../Missions.js"
+        >
+          Missions
+        </a>
+        <div
+          class="divider"
+        />
+        <a
+          class="profile-link"
+          href="../MyProfile.js"
+        >
+          My Profile
+        </a>
+      </nav>
+    </header>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Testing Rendering Should render Missions section 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="missions-list"
+      >
+        <table
+          class="missions"
+        >
+          <thead>
+            <tr>
+              <th>
+                <h3>
+                  Mission
+                </h3>
+              </th>
+              <th>
+                <h3>
+                  Description
+                </h3>
+              </th>
+              <th>
+                <h3>
+                  Status
+                </h3>
+              </th>
+              <th>
+                <small />
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <h4>
+                  Alpha
+                </h4>
+              </td>
+              <td>
+                Mission to go to space
+              </td>
+              <td>
+                <small
+                  class="not-member"
+                >
+                  NOT A MEMBER
+                </small>
+              </td>
+              <td>
+                <button
+                  class="join"
+                  type="button"
+                >
+                  Join Mission
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>
+                  Beta
+                </h4>
+              </td>
+              <td>
+                Mission to go back to earth
+              </td>
+              <td>
+                <small
+                  class="member"
+                >
+                  Active Member
+                </small>
+              </td>
+              <td>
+                <button
+                  class="cancel"
+                  type="button"
+                >
+                  Leave Mission
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="missions-list"
+    >
+      <table
+        class="missions"
+      >
+        <thead>
+          <tr>
+            <th>
+              <h3>
+                Mission
+              </h3>
+            </th>
+            <th>
+              <h3>
+                Description
+              </h3>
+            </th>
+            <th>
+              <h3>
+                Status
+              </h3>
+            </th>
+            <th>
+              <small />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>
+                Alpha
+              </h4>
+            </td>
+            <td>
+              Mission to go to space
+            </td>
+            <td>
+              <small
+                class="not-member"
+              >
+                NOT A MEMBER
+              </small>
+            </td>
+            <td>
+              <button
+                class="join"
+                type="button"
+              >
+                Join Mission
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>
+                Beta
+              </h4>
+            </td>
+            <td>
+              Mission to go back to earth
+            </td>
+            <td>
+              <small
+                class="member"
+              >
+                Active Member
+              </small>
+            </td>
+            <td>
+              <button
+                class="cancel"
+                type="button"
+              >
+                Leave Mission
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Testing Rendering Should render MyProfile section 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        id="profile"
+      >
+        <section>
+          <table>
+            <caption>
+              <h2>
+                My Missions
+              </h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td>
+                  <h4>
+                    Beta
+                  </h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section
+          id="myRockets"
+        >
+          <table>
+            <caption>
+              <h2>
+                My Rockets
+              </h2>
+            </caption>
+            <tbody>
+              <tr>
+                <td>
+                  <h4>
+                    Beta
+                  </h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      id="profile"
+    >
+      <section>
+        <table>
+          <caption>
+            <h2>
+              My Missions
+            </h2>
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                <h4>
+                  Beta
+                </h4>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section
+        id="myRockets"
+      >
+        <table>
+          <caption>
+            <h2>
+              My Rockets
+            </h2>
+          </caption>
+          <tbody>
+            <tr>
+              <td>
+                <h4>
+                  Beta
+                </h4>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Testing Rendering Should render Rockets section 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        id="rockets"
+      >
+        <div
+          class="rocket"
+          id="1"
+        >
+          <img
+            alt="Rocket"
+            class="rocketImg"
+            src="planet.png"
+          />
+          <div
+            class="rocketDetail"
+          >
+            <h3
+              class="rocketHead"
+            >
+              Alpha
+            </h3>
+            <p
+              class="rocketDesc"
+            >
+              Rocket launched in space.
+            </p>
+            <button
+              class="reserveRocket"
+              type="button"
+            >
+              Reserve Rocket
+            </button>
+          </div>
+        </div>
+        <div
+          class="rocket"
+          id="2"
+        >
+          <img
+            alt="Rocket"
+            class="rocketImg"
+            src="planet.png"
+          />
+          <div
+            class="rocketDetail"
+          >
+            <h3
+              class="rocketHead"
+            >
+              Beta
+            </h3>
+            <p
+              class="rocketDesc"
+            >
+              <span
+                class="reserveBadge"
+              >
+                Reserved
+              </span>
+              Rocket launched in space.
+            </p>
+            <button
+              class="cancelRocket"
+              type="button"
+            >
+              Cancel Reservation
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      id="rockets"
+    >
+      <div
+        class="rocket"
+        id="1"
+      >
+        <img
+          alt="Rocket"
+          class="rocketImg"
+          src="planet.png"
+        />
+        <div
+          class="rocketDetail"
+        >
+          <h3
+            class="rocketHead"
+          >
+            Alpha
+          </h3>
+          <p
+            class="rocketDesc"
+          >
+            Rocket launched in space.
+          </p>
+          <button
+            class="reserveRocket"
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </div>
+      <div
+        class="rocket"
+        id="2"
+      >
+        <img
+          alt="Rocket"
+          class="rocketImg"
+          src="planet.png"
+        />
+        <div
+          class="rocketDetail"
+        >
+          <h3
+            class="rocketHead"
+          >
+            Beta
+          </h3>
+          <p
+            class="rocketDesc"
+          >
+            <span
+              class="reserveBadge"
+            >
+              Reserved
+            </span>
+            Rocket launched in space.
+          </p>
+          <button
+            class="cancelRocket"
+            type="button"
+          >
+            Cancel Reservation
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
