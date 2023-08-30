@@ -19,10 +19,12 @@ describe('Testing Rendering', () => {
     const profile = render(<MyProfile />);
     expect(profile).toMatchSnapshot();
   });
+
   it('Should render Header section', () => {
     const header = render(<Header />);
     expect(header).toMatchSnapshot();
   });
+
   it('Should render Missions section', () => {
     const missions = render(<Missions />);
     expect(missions).toMatchSnapshot();
