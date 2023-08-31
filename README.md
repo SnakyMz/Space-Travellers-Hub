@@ -31,7 +31,7 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-**Space Traveller's Hub** is a website to reservation rockets and missions.
+**Space Traveller's Hub** is a website to make reservation of rockets and missions from SpaceX. And display all registered items in My profile.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,14 +51,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Make reservtion of Roxkets**
-- **Make reservtion of Missions**
+- **Make reservtion and cancellation of Rockets**
+- **Make reservtion and cancellation of Missions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon]()
+- [Live link](https://space-travellers-hub-y40g.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
